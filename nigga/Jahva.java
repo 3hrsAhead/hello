@@ -12,6 +12,7 @@ public class Jahva
         System.out.println("Get a sword?(y/n)");
         char ans = s.next().charAt(0);
         boolean hasSword;
+        int health=30;
         if (ans=='y')
         hasSword=true;
         else
@@ -29,4 +30,11 @@ public class Jahva
         }
         System.out.println("The End");
         }
+    public static void attack(boolean x)
+    {
+        if (x)
+        {health=health-5;
+        
+        }
+    }
 }
